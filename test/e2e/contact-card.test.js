@@ -1,6 +1,5 @@
 const {assert, getDriver} = require('vl-ui-core').Test.Setup;
 const VlContactCardPage = require('./pages/vl-contact-card.page');
-const {VlPropertiesList} = require('vl-ui-properties').Test;
 
 describe('vl-contact-card', async () => {
   let driver;
@@ -24,7 +23,7 @@ describe('vl-contact-card', async () => {
     const propertiesElement = await contactCard.getPropertiesElement();
     const propertiesChildren = await propertiesElement.getSlotElements();
     assert.lengthOf(propertiesChildren, 1);
-    const propertiesList = await new VlPropertiesList(driver, propertiesChildren[0]);
+    const propertiesList = await vlContactCardPage.getPropertiesList(propertiesChildren[0]);
     const properties = await propertiesList.getProperties();
     assert.lengthOf(properties, 4);
     const adresProperty = properties[0];

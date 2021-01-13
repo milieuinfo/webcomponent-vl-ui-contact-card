@@ -1,9 +1,14 @@
 const VlContactCard = require('../components/vl-contact-card');
 const {Page, Config} = require('vl-ui-core').Test;
+const {VlPropertiesList} = require('vl-ui-properties').Test;
 
 class VlContactCardPage extends Page {
   async getContactCard() {
     return this._getContactCard('#contact-card');
+  }
+
+  async getPropertiesList(element) {
+    return new VlPropertiesList(this.driver, element);
   }
 
   async load() {
