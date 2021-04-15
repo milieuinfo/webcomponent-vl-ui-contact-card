@@ -15,6 +15,8 @@
 @import "vl-ui-accordion/src/scss/accordion";
 @import "vl-ui-infoblock/src/scss/infoblock";
 @import "vl-ui-button/src/scss/button";
+// todo: refactor when layer-map-is included in build
+@import "vl-ui-layer-map/src/scss/layer-map";
 @import "contact-data";
 @import "vl-ui-contact-card/src/scss/contact-card";
 
