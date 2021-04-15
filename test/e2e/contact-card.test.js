@@ -12,6 +12,10 @@ describe('vl-contact-card', async () => {
     return vlContactCardPage.load();
   });
 
+  it('WCAG', async () => {
+    await assert.eventually.isFalse(vlContactCardPage.hasWcagIssues());
+  });
+
   it('als gebruiker kan ik de contact card info bekijken', async () => {
     const contactCard = await vlContactCardPage.getContactCard();
     const infoblock = await contactCard.getInfoblockElement();
