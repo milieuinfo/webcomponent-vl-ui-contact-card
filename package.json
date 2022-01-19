@@ -48,7 +48,7 @@
 		"@govflanders/vl-ui-accordion": "^3.12.17",
 		"@govflanders/vl-ui-button": "^3.12.17",
 		"@govflanders/vl-ui-contact-card": "^3.12.17",
-		"@govflanders/vl-ui-core": "^4.1.17",
+		"@govflanders/vl-ui-core": "^12.0.0",
 		"@govflanders/vl-ui-infoblock": "^3.12.17",
 		"@govflanders/vl-ui-layer-map": "^3.12.17",
 		"@govflanders/vl-ui-titles": "^3.12.17",
